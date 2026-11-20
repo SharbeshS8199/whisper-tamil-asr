@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+.env
+.pytest_cache/
+outputs/
+checkpoints/
+data/raw/
+mlruns/
+*.pt
+*.onnx
+*.safetensors

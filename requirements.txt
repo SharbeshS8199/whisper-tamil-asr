@@ -1,0 +1,9 @@
+torch>=2.2
+transformers>=4.46
+datasets>=2.20,<4.0      # FLEURS uses a loading script; datasets 4.x removed script support
+accelerate>=0.33
+librosa>=0.10
+soundfile>=0.12
+huggingface_hub>=0.24
+pyyaml>=6.0
+gradio>=4.0
