@@ -11,6 +11,9 @@ license = { text = "MIT" }
 requires-python = ">=3.10"
 dependencies = ["pyyaml>=6.0"]
 
+[project.optional-dependencies]
+dashboard = ["streamlit>=1.36", "plotly>=5.20"]
+
 [project.urls]
 Author = "https://github.com/SharbeshS8199"
 

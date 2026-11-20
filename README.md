@@ -6,6 +6,15 @@ Fine-tunes OpenAI **Whisper-small** for Tamil speech recognition on **Google FLE
 **AI4Bharat IndicVoices**. It reports word and character error rate before and after fine-tuning,
 publishes the model on the Hugging Face Hub, and includes a microphone demo.
 
+## Dashboard
+
+```bash
+pip install -e '.[dashboard]'      # streamlit + plotly
+streamlit run dashboard/app.py
+```
+
+Zero-shot vs fine-tuned WER/CER (with the default-normaliser comparison) · per-utterance error analysis and hardest cases · a **normaliser explorer** where you type Tamil and see Whisper's default split words apart · upload audio to transcribe.
+
 ## The finding most Tamil Whisper results miss
 
 Whisper's built-in `BasicTextNormalizer` replaces every Unicode *mark* with a space. In Tamil, the
